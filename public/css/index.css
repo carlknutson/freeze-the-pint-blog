@@ -6,16 +6,16 @@
 
 /* Theme colors */
 :root {
-	--color-gray-20: #e0e0e0;
-	--color-gray-50: #C0C0C0;
-	--color-gray-90: #333;
+	--color-gray-20: #D0CDD7;
+	--color-gray-50: #416165;
+	--color-gray-90: #0B3948;
 
 	--background-color: #fff;
 
 	--text-color: var(--color-gray-90);
-	--text-color-link: #082840;
-	--text-color-link-active: #5f2b48;
-	--text-color-link-visited: #17050F;
+	--text-color-link: #D0CDD7;
+	--text-color-link-active: #416165;
+	--text-color-link-visited: #0B3948;
 
 	--syntax-tab-size: 2;
 }
@@ -24,14 +24,14 @@
 	:root {
 		--color-gray-20: #e0e0e0;
 		--color-gray-50: #C0C0C0;
-		--color-gray-90: #dad8d8;
+		--color-gray-90: #416165;
 
 		/* --text-color is assigned to --color-gray-_ above */
-		--text-color-link: #1493fb;
-		--text-color-link-active: #6969f7;
-		--text-color-link-visited: #a6a6f8;
+		--text-color-link: #D0CDD7;
+		--text-color-link-active: #416165;
+		--text-color-link-visited: #2196f3;
 
-		--background-color: #15202b;
+		--background-color: #ffffff;
 	}
 }
 
