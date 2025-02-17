@@ -1,11 +1,10 @@
 export default {
-	title: "Eleventy Base Blog v9",
-	url: "https://example.com/",
-	language: "en",
-	description: "I am writing about my experiences as a naval navel-gazer.",
-	author: {
-		name: "Your Name Here",
-		email: "youremailaddress@example.com",
-		url: "https://example.com/about-me/"
-	}
+  title: "My Blog",
+  url: "https://yourblogurl.com/",
+  language: "en",
+  description: "A starter template for a personal blog powered by Notion as a CMS. Easily customize and publish your own content.",
+  author: {
+	name: "Your Name",
+	email: "your@email.com",
+  }
 }

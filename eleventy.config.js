@@ -63,12 +63,13 @@ export default async function(eleventyConfig) {
 		},
 		metadata: {
 			language: "en",
-			title: "Blog Title",
-			subtitle: "This is a longer description about your blog.",
-			base: "https://example.com/",
-			author: {
-				name: "Your Name"
-			}
+	  title: "My Blog",
+	  subtitle: "A starter template for a personal blog powered by Notion as a CMS. Easily customize and publish your own content.",
+	  base: "https://yourblogurl.com/",
+	  author: {
+		name: "Your Name",
+		email: "your@email.com"
+	  }
 		}
 	});
 
@@ -105,6 +106,8 @@ export default async function(eleventyConfig) {
 	eleventyConfig.addShortcode("currentBuildDate", () => {
 		return (new Date()).toISOString();
 	});
+
+	eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
 	// Features to make your build faster (when you need them)
 

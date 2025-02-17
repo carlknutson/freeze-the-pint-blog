@@ -1,0 +1,73 @@
+name: Generate Markdown
+on:
+  workflow_dispatch:
+jobs:
+  get-posts:
+    runs-on: ubuntu-latest
+    outputs:
+      posts: ${{  steps.format-posts.outputs.posts }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - name: Cache npm
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package.json') }}
+      - run: npm install
+      - name: Get posts
+        id: get-posts
+        env:
+          NOTION_KEY: ${{  secrets.NOTION_KEY  }}
+          NOTION_BLOG_ID: ${{  secrets.NOTION_BLOG_ID  }}
+        run: echo "posts=$(node .github/scripts/posts-to-publish.js)" >> "$GITHUB_OUTPUT"
+      - uses: actions/github-script@v7
+        id: format-posts
+        env:
+          POSTS: ${{  steps.get-posts.outputs.posts  }}
+        with:
+          script: |
+            let posts = process.env.POSTS.split(' ').filter(post => post).map(post => post.split(','));
+            let json = JSON.stringify(posts);
+            core.setOutput('posts', json);
+  posts-to-md:
+    needs: get-posts
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        post: ${{  fromJson(needs.get-posts.outputs.posts)  }}
+      max-parallel: 1
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - name: Cache npm
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package.json') }}
+      - run: npm install
+      - name: Generate markdown
+        env:
+          NOTION_KEY: ${{  secrets.NOTION_KEY  }}
+          NOTION_BLOG_ID: ${{  secrets.NOTION_BLOG_ID  }}
+          POST_ID: ${{  matrix.post[1]  }}
+        run: |
+          git pull
+          cd content/blog
+          mkdir -p ${{  matrix.post[0]  }}
+          cd ${{ matrix.post[0] }}
+          node ../../../.github/scripts/notion-to-md.js > ${{  matrix.post[0]  }}.md
+          node ../../../.github/scripts/save-images.cjs ${{ matrix.post[0]  }}.md
+          cat ${{ matrix.post[0]  }}.md
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add .
+          git commit -m "Updating ${{  matrix.post[0]  }} post"
+          git push
