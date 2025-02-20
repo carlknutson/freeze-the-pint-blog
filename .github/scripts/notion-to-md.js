@@ -1,0 +1,19 @@
+import { Client } from '@notionhq/client'
+import { NotionToMarkdown } from "notion-to-md";
+
+const notion = new Client({ auth: process.env.NOTION_KEY });
+const n2m = new NotionToMarkdown({ notionClient: notion });
+
+const getPost = await notion.pages.retrieve({ page_id: process.env.POST_ID});
+const getContent = async (id) => {
+    const mdblocks = await n2m.pageToMarkdown(id);
+    return n2m.toMarkdownString(mdblocks).parent;
+};
+
+console.log('---')
+console.log('title: ' + getPost.properties.Title.title[0].plain_text)
+// console.log('description: ' + )
+console.log('date: ' + getPost.properties.Date.date.start)
+// console.log('tags: ' + getPost.properties.Tags)
+console.log('---')
+console.log(await getContent(process.env.POST_ID))
