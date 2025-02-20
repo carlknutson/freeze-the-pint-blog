@@ -2,37 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 	
 	<url>
-		<loc>https://freezethepint.com/eleventy-base-blog/blog/firstpost/</loc>
+		<loc>https://freezethepint.com/blog/firstpost/</loc>
 		<lastmod>2018-05-01</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://freezethepint.com/eleventy-base-blog/blog/birthday-cake-ice-cream/</loc>
+		<loc>https://freezethepint.com/blog/birthday-cake-ice-cream/</loc>
 		<lastmod>2025-02-19</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://freezethepint.com/eleventy-base-blog/about/</loc>
+		<loc>https://freezethepint.com/about/</loc>
 		<lastmod>2025-02-20</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://freezethepint.com/eleventy-base-blog/blog/</loc>
+		<loc>https://freezethepint.com/blog/</loc>
 		<lastmod>2025-02-20</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://freezethepint.com/eleventy-base-blog/</loc>
+		<loc>https://freezethepint.com/</loc>
 		<lastmod>2025-02-20</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://freezethepint.com/eleventy-base-blog/tags/</loc>
+		<loc>https://freezethepint.com/tags/</loc>
 		<lastmod>2025-02-20</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://freezethepint.com/eleventy-base-blog/feed/feed.xml</loc>
+		<loc>https://freezethepint.com/feed/feed.xml</loc>
 		<lastmod>2025-02-20</lastmod>
 	</url>
 </urlset>
