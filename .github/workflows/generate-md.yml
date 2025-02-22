@@ -36,12 +36,11 @@ jobs:
   posts-to-md:
     needs: get-posts
     runs-on: ubuntu-latest
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
     strategy:
       fail-fast: false
       matrix:
         post: ${{  fromJson(needs.get-posts.outputs.posts)  }}
+      max-parallel: 1
     steps:
       - uses: actions/checkout@v4
       - name: Setup Node
