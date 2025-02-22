@@ -12,8 +12,9 @@ const getContent = async (id) => {
 
 console.log('---')
 console.log('title: ' + getPost.properties.Title.title[0].plain_text)
-// console.log('description: ' + )
-console.log('date: ' + getPost.properties.Date.date.start)
-// console.log('tags: ' + getPost.properties.Tags)
+console.log('description: ' + getPost.properties.Description.rich_text[0].plain_text)
+console.log('published: ' + getPost.properties.Published.date.start)
+console.log('last_updated: ' + getPost.properties['Last Updated'].date.start)
+console.log('tags: ' + getPost.properties.Tags.multi_select.map(tag => tag.name).join(' '))
 console.log('---')
 console.log(await getContent(process.env.POST_ID))
