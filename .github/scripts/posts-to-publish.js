@@ -9,12 +9,6 @@ const db = await notion.databases.query({
         property: 'Publish',
         checkbox: { equals: true, },
     },
-    sorts: [
-        {
-            property: 'Date',
-            direction: 'descending',
-        },
-    ],
 });
 
 var pages = ''
