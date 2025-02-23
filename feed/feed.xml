@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet href="pretty-atom-feed.xsl" type="text/xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-  <title>Blog Title</title>
-  <subtitle>This is a longer description about your blog.</subtitle>
-  <link href="https://example.com/feed/feed.xml" rel="self" />
-  <link href="https://example.com/" />
-  <updated>2025-02-23T05:10:17Z</updated>
-  <id>https://example.com/</id>
+  <title>Freeze the Pint</title>
+  <subtitle>Freeze the Pint is your go-to destination for homemade ice cream recipes, tips, and flavor experiments. Whether you&#39;re a beginner or an ice cream enthusiast, you&#39;ll find a collection of unique, tested recipes and insights into the art and science of ice cream making. Follow along for new flavors, creative techniques, and the occasional kitchen experiment—because the best ice cream is the one you make yourself!</subtitle>
+  <link href="https://freezethepint.com/feed/feed.xml" rel="self" />
+  <link href="https://freezethepint.com/" />
+  <updated>2025-02-23T05:20:10Z</updated>
+  <id>https://freezethepint.com/</id>
   <author>
-    <name>Your Name</name>
+    <name>Carl</name>
+    <email>carl@freezethepint.com</email>
   </author>
   <entry>
     <title>Oreo Earthquake</title>
-    <link href="https://example.com/blog/oreo-earthquake/" />
-    <updated>2025-02-23T05:10:17Z</updated>
-    <id>https://example.com/blog/oreo-earthquake/</id>
+    <link href="https://freezethepint.com/blog/oreo-earthquake/" />
+    <updated>2025-02-23T05:20:10Z</updated>
+    <id>https://freezethepint.com/blog/oreo-earthquake/</id>
     <content type="html">&lt;h2 id=&quot;this-was-ai-generated&quot;&gt;This was AI Generated 😃&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Oreo Ice Cream: A Cookies &amp;amp; Cream Classic&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;If you&#39;re a fan of cookies and cream, Oreo ice cream is the ultimate treat. This homemade version is rich, creamy, and packed with crunchy Oreo cookie pieces in every bite. Whether you&#39;re making it for a summer dessert or just to satisfy a sweet craving, this recipe is easy and rewarding.&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/blog/oreo-earthquake/HHzGUA8cjl-360.avif 360w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/blog/oreo-earthquake/HHzGUA8cjl-360.webp 360w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/blog/oreo-earthquake/HHzGUA8cjl-360.png&quot; alt=&quot;image.png&quot; width=&quot;360&quot; height=&quot;360&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://freezethepint.com/blog/oreo-earthquake/HHzGUA8cjl-360.avif 360w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://freezethepint.com/blog/oreo-earthquake/HHzGUA8cjl-360.webp 360w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://freezethepint.com/blog/oreo-earthquake/HHzGUA8cjl-360.png&quot; alt=&quot;image.png&quot; width=&quot;360&quot; height=&quot;360&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;h3 id=&quot;why-you-ll-love-this-recipe&quot;&gt;&lt;strong&gt;Why You&#39;ll Love This Recipe&lt;/strong&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Easy to Make:&lt;/strong&gt; Simple ingredients and minimal prep.&lt;/li&gt;
@@ -55,12 +56,12 @@
   </entry>
   <entry>
     <title>Birthday Cake Ice Cream</title>
-    <link href="https://example.com/blog/birthday-cake-ice-cream/" />
-    <updated>2025-02-23T05:10:17Z</updated>
-    <id>https://example.com/blog/birthday-cake-ice-cream/</id>
+    <link href="https://freezethepint.com/blog/birthday-cake-ice-cream/" />
+    <updated>2025-02-23T05:20:10Z</updated>
+    <id>https://freezethepint.com/blog/birthday-cake-ice-cream/</id>
     <content type="html">&lt;h2 id=&quot;this-was-ai-generated&quot;&gt;This was AI Generated 😃&lt;/h2&gt;
 &lt;p&gt;Birthday cake ice cream is not the easiest to make because it requires a delicate balance of flavors and textures to truly capture the essence of a classic birthday cake. The base must have a rich, buttery vanilla or cake batter flavor, which often involves carefully incorporating cake mix or emulsified flavor extracts without affecting the ice cream’s smooth texture. Additionally, mix-ins like cake pieces, frosting swirls, and sprinkles need to be added strategically—too early, and they may dissolve or become mushy; too late, and they won’t distribute evenly. Maintaining the right consistency while preventing the cake chunks from becoming too soggy or frozen solid adds another layer of complexity. Finally, achieving the signature sweetness without overwhelming the palate requires careful ingredient balancing, making birthday cake ice cream a challenge to perfect.&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/blog/birthday-cake-ice-cream/FB56s3bUCn-1024.avif 1024w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/blog/birthday-cake-ice-cream/FB56s3bUCn-1024.webp 1024w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/blog/birthday-cake-ice-cream/FB56s3bUCn-1024.png&quot; alt=&quot;ice-cream.jpg&quot; width=&quot;1024&quot; height=&quot;1024&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://freezethepint.com/blog/birthday-cake-ice-cream/FB56s3bUCn-1024.avif 1024w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://freezethepint.com/blog/birthday-cake-ice-cream/FB56s3bUCn-1024.webp 1024w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://freezethepint.com/blog/birthday-cake-ice-cream/FB56s3bUCn-1024.png&quot; alt=&quot;ice-cream.jpg&quot; width=&quot;1024&quot; height=&quot;1024&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
