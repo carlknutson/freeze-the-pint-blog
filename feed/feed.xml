@@ -5,9 +5,62 @@
   <subtitle>This is a longer description about your blog.</subtitle>
   <link href="https://example.com/feed/feed.xml" rel="self" />
   <link href="https://example.com/" />
-  <updated>2025-02-23T04:21:47Z</updated>
+  <updated>2025-02-23T04:40:15Z</updated>
   <id>https://example.com/</id>
   <author>
     <name>Your Name</name>
   </author>
+  <entry>
+    <title>Oreo Earthquake</title>
+    <link href="https://example.com/blog/oreo-earthquake/" />
+    <updated>2025-02-23T04:40:15Z</updated>
+    <id>https://example.com/blog/oreo-earthquake/</id>
+    <content type="html">&lt;h2 id=&quot;this-was-ai-generated&quot;&gt;This was AI Generated 😃&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Oreo Ice Cream: A Cookies &amp;amp; Cream Classic&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If you&#39;re a fan of cookies and cream, Oreo ice cream is the ultimate treat. This homemade version is rich, creamy, and packed with crunchy Oreo cookie pieces in every bite. Whether you&#39;re making it for a summer dessert or just to satisfy a sweet craving, this recipe is easy and rewarding.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/blog/oreo-earthquake/HHzGUA8cjl-360.avif 360w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/blog/oreo-earthquake/HHzGUA8cjl-360.webp 360w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/blog/oreo-earthquake/HHzGUA8cjl-360.png&quot; alt=&quot;image.png&quot; width=&quot;360&quot; height=&quot;360&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;h3 id=&quot;why-you-ll-love-this-recipe&quot;&gt;&lt;strong&gt;Why You&#39;ll Love This Recipe&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Easy to Make:&lt;/strong&gt; Simple ingredients and minimal prep.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;No Ice Cream Maker Needed:&lt;/strong&gt; Can be made with or without an ice cream machine.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Customizable:&lt;/strong&gt; Adjust sweetness, cookie chunks, or even add a swirl of fudge!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&quot;language-javascript&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;Ingredients
+&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;2 cups heavy cream&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;1 cup whole milk&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;3/4 cup granulated sugar&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;1 tsp vanilla extract&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;Pinch of salt&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;15 Oreo cookies, crushed&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;instructions&quot;&gt;&lt;strong&gt;Instructions&lt;/strong&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Mix the Base:&lt;/strong&gt; In a mixing bowl, whisk together the heavy cream, milk, sugar, vanilla, and salt until the sugar dissolves.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Chill:&lt;/strong&gt; If using an ice cream maker, refrigerate the mixture for 1-2 hours before churning.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Churn or Freeze:&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;With an ice cream maker:&lt;/em&gt; Pour the mixture into the machine and churn according to the manufacturer’s instructions. Add crushed Oreos in the last 5 minutes.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Without an ice cream maker:&lt;/em&gt; Pour the mixture into a freezer-safe container, stir in Oreos, and freeze. Stir every 30 minutes for the first 3 hours to prevent ice crystals.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Freeze &amp;amp; Serve:&lt;/strong&gt; Let the ice cream firm up in the freezer for 2-4 hours before scooping. Enjoy!&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;tips-for-the-best-oreo-ice-cream&quot;&gt;&lt;strong&gt;Tips for the Best Oreo Ice Cream&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Use &lt;strong&gt;double-stuffed Oreos&lt;/strong&gt; for extra creaminess.&lt;/li&gt;
+&lt;li&gt;Crush cookies into different-sized chunks for texture.&lt;/li&gt;
+&lt;li&gt;For a softer serve, let the ice cream sit at room temperature for 5 minutes before scooping.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This homemade Oreo ice cream is the perfect blend of creamy vanilla and crunchy cookies. Enjoy it in a cone, a bowl, or even sandwiched between more Oreos for an indulgent treat!&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Birthday Cake Ice Cream</title>
+    <link href="https://example.com/blog/birthday-cake-ice-cream/" />
+    <updated>2025-02-23T04:40:15Z</updated>
+    <id>https://example.com/blog/birthday-cake-ice-cream/</id>
+    <content type="html">&lt;h2 id=&quot;this-was-ai-generated&quot;&gt;This was AI Generated 😃&lt;/h2&gt;
+&lt;p&gt;Birthday cake ice cream is not the easiest to make because it requires a delicate balance of flavors and textures to truly capture the essence of a classic birthday cake. The base must have a rich, buttery vanilla or cake batter flavor, which often involves carefully incorporating cake mix or emulsified flavor extracts without affecting the ice cream’s smooth texture. Additionally, mix-ins like cake pieces, frosting swirls, and sprinkles need to be added strategically—too early, and they may dissolve or become mushy; too late, and they won’t distribute evenly. Maintaining the right consistency while preventing the cake chunks from becoming too soggy or frozen solid adds another layer of complexity. Finally, achieving the signature sweetness without overwhelming the palate requires careful ingredient balancing, making birthday cake ice cream a challenge to perfect.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/blog/birthday-cake-ice-cream/FB56s3bUCn-1024.avif 1024w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/blog/birthday-cake-ice-cream/FB56s3bUCn-1024.webp 1024w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/blog/birthday-cake-ice-cream/FB56s3bUCn-1024.png&quot; alt=&quot;ice-cream.jpg&quot; width=&quot;1024&quot; height=&quot;1024&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+</content>
+  </entry>
 </feed>
