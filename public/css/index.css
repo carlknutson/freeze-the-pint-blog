@@ -27,8 +27,8 @@
 		--color-gray-90: #416165;
 
 		/* --text-color is assigned to --color-gray-_ above */
-		--text-color-link: #D0CDD7;
-		--text-color-link-active: #416165;
+		--text-color-link: #2196f3;
+		--text-color-link-active: #097bd7;
 		--text-color-link-visited: #2196f3;
 
 		--background-color: #ffffff;
