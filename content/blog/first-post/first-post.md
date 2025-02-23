@@ -27,6 +27,3 @@ Honestly, this whole blog adventure is a way for me to build a blogging platform
 Thanks for joining me on this sweet journey.
 
 
-<iframe src="[https://app.freezethepint.com/sorbet/strawberry-banana](https://app.freezethepint.com/sorbet/strawberry-banana)" title="Gallery of frozen dessert recipes."></iframe>
-
-
