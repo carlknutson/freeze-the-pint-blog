@@ -12,7 +12,7 @@ const getContent = async (id) => {
 
 console.log('---')
 console.log('title: "' + getPost.properties.Title.title[0].plain_text + '"')
-console.log('description: "' + getPost.properties.Description.rich_text[0].plain_text + '"'))
+console.log('description: "' + getPost.properties.Description.rich_text[0].plain_text + '"')
 console.log('tags: ' + JSON.stringify(getPost.properties.Tags.multi_select.map(tag => tag.name)))
 console.log('published: ' + getPost.properties.Published.date.start)
 console.log('date: Last Modified')
