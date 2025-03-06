@@ -1,6 +1,6 @@
 ---
-title: Review\: alattefood.com’s Homemade Strawberry Ice Cream
-description: Review of alattefood.com’s homemade strawberry ice cream recipe.
+title: "Review: alattefood.com’s Homemade Strawberry Ice Cream"
+description: "Review of alattefood.com’s homemade strawberry ice cream recipe."
 tags: ["review","strawberry","ice-cream"]
 published: 2025-03-05
 date: Last Modified
