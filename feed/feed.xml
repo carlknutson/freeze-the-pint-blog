@@ -5,7 +5,7 @@
   <subtitle>Freeze the Pint is your go-to destination for homemade ice cream recipes, tips, and flavor experiments. Whether you&#39;re a beginner or an ice cream enthusiast, you&#39;ll find a collection of unique, tested recipes and insights into the art and science of ice cream making. Follow along for new flavors, creative techniques, and the occasional kitchen experiment—because the best ice cream is the one you make yourself!</subtitle>
   <link href="https://freezethepint.com/feed/feed.xml" rel="self" />
   <link href="https://freezethepint.com/" />
-  <updated>2025-03-06T05:28:33Z</updated>
+  <updated>2025-04-05T12:56:10Z</updated>
   <id>https://freezethepint.com/</id>
   <author>
     <name>Carl</name>
@@ -14,7 +14,7 @@
   <entry>
     <title>First post!</title>
     <link href="https://freezethepint.com/blog/first-post/" />
-    <updated>2025-03-06T05:28:33Z</updated>
+    <updated>2025-04-05T12:56:10Z</updated>
     <id>https://freezethepint.com/blog/first-post/</id>
     <content type="html">&lt;p&gt;Over the past year, I got caught up in the hype surrounding the Ninja Creami Deluxe. It was a fantastic machine that worked wonders—until it started malfunctioning after ~75 spins. I’ll likely dive into that experience in a future post. But despite the setback, it got me hooked on making ice cream. My first creation was a simple strawberry banana ice cream, made with just strawberries and bananas 🤯&lt;/p&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://freezethepint.com/blog/first-post/UtRTOdD8rL-252.avif 252w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://freezethepint.com/blog/first-post/UtRTOdD8rL-252.webp 252w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://freezethepint.com/blog/first-post/UtRTOdD8rL-252.png&quot; alt=&quot;strawberry-banana.jpg&quot; width=&quot;252&quot; height=&quot;189&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
@@ -27,34 +27,6 @@
 &lt;/ul&gt;
 &lt;p&gt;Honestly, this whole blog adventure is a way for me to build a blogging platform from the ground up. This post is written within a Notion database entry. It will eventually be pulled through the Node Notion SDK, converted into markdown via a GitHub Action, committed to my &lt;a href=&quot;https://github.com/carlknutson/freeze-the-pint-blog&quot;&gt;freeze-the-pint-blog&lt;/a&gt; repository, processed by the Eleventy framework, and, finally, published to &lt;code&gt;freezethepint.com&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Thanks for joining me on this sweet journey.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>A Latte Food’s Recipe: Homemade Strawberry Ice Cream</title>
-    <link href="https://freezethepint.com/blog/a-latte-food-s-recipe-homemade-strawberry-ice-cream/" />
-    <updated>2025-03-06T05:28:33Z</updated>
-    <id>https://freezethepint.com/blog/a-latte-food-s-recipe-homemade-strawberry-ice-cream/</id>
-    <content type="html">&lt;p&gt;I&#39;ve never been a fan of strawberry ice cream—it usually tastes too artificial. But could making it from scratch change my mind? To find out, I whipped up a pint using fresh strawberries and a few simple ingredients. The recipe I reviewed is from &lt;a href=&quot;https://www.alattefood.com/homemade-strawberry-ice-cream/&quot;&gt;A Latte Food&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://freezethepint.com/blog/a-latte-food-s-recipe-homemade-strawberry-ice-cream/7pG7zzOtWe-288.avif 288w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://freezethepint.com/blog/a-latte-food-s-recipe-homemade-strawberry-ice-cream/7pG7zzOtWe-288.webp 288w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://freezethepint.com/blog/a-latte-food-s-recipe-homemade-strawberry-ice-cream/7pG7zzOtWe-288.jpeg&quot; alt=&quot;strawberry-ice-cream.jpg&quot; width=&quot;288&quot; height=&quot;216&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://freezethepint.com/blog/a-latte-food-s-recipe-homemade-strawberry-ice-cream/ZhT8mHYr90-288.avif 288w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://freezethepint.com/blog/a-latte-food-s-recipe-homemade-strawberry-ice-cream/ZhT8mHYr90-288.webp 288w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://freezethepint.com/blog/a-latte-food-s-recipe-homemade-strawberry-ice-cream/ZhT8mHYr90-288.jpeg&quot; alt=&quot;ingredients.jpg&quot; width=&quot;288&quot; height=&quot;216&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;p&gt;The recipe calls for 2/3 to 1½ cups of strawberries, depending on whether you puree them or leave them chopped in the base. I chose to puree them for the smoothest possible base, using 1 cup of strawberries.&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://freezethepint.com/blog/a-latte-food-s-recipe-homemade-strawberry-ice-cream/tiL9myX8Sv-288.avif 288w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://freezethepint.com/blog/a-latte-food-s-recipe-homemade-strawberry-ice-cream/tiL9myX8Sv-288.webp 288w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://freezethepint.com/blog/a-latte-food-s-recipe-homemade-strawberry-ice-cream/tiL9myX8Sv-288.jpeg&quot; alt=&quot;puree.jpg&quot; width=&quot;288&quot; height=&quot;216&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://freezethepint.com/blog/a-latte-food-s-recipe-homemade-strawberry-ice-cream/-Vdb6nWtkK-288.avif 288w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://freezethepint.com/blog/a-latte-food-s-recipe-homemade-strawberry-ice-cream/-Vdb6nWtkK-288.webp 288w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://freezethepint.com/blog/a-latte-food-s-recipe-homemade-strawberry-ice-cream/-Vdb6nWtkK-288.jpeg&quot; alt=&quot;churning.jpg&quot; width=&quot;288&quot; height=&quot;216&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;p&gt;The base churned for about 15 minutes. Unlike most recipes I&#39;ve tried that overwhelm the Ice-21, this recipe worked perfectly in the machine. I&#39;ll definitely scale up the quantity next time since there was plenty of room.&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://freezethepint.com/blog/a-latte-food-s-recipe-homemade-strawberry-ice-cream/OgNIUpD-g1-288.avif 288w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://freezethepint.com/blog/a-latte-food-s-recipe-homemade-strawberry-ice-cream/OgNIUpD-g1-288.webp 288w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://freezethepint.com/blog/a-latte-food-s-recipe-homemade-strawberry-ice-cream/OgNIUpD-g1-288.jpeg&quot; alt=&quot;finished.jpg&quot; width=&quot;288&quot; height=&quot;216&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;h3 id=&quot;flavor-18&quot;&gt;&lt;strong&gt;Flavor: 18&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;The flavor was clean and refreshing. However, after working through two scoops, I found myself wanting more strawberry intensity. As a stand-alone dessert without mix-ins, this recipe would benefit from additional strawberries.&lt;/p&gt;
-&lt;h3 id=&quot;texture-20&quot;&gt;&lt;strong&gt;Texture: 20&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;This surprised me, as I expected more ice crystals to form—especially given how quickly the base churned to solid form. I think the texture score could be higher if I hadn&#39;t pureed all the strawberries. The puree method left some gritty texture from the high concentration of strawberries in the base. Keeping some strawberry chunks might have reduced this grittiness.&lt;/p&gt;
-&lt;p&gt;TIL: The &amp;quot;seeds&amp;quot; on the outside of a strawberry are called achenes. Each achene is actually a tiny, dry fruit containing a seed. The red, fleshy part of the strawberry isn&#39;t the true fruit at all—it&#39;s an enlarged receptacle that holds these achenes. 🤯&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://freezethepint.com/blog/a-latte-food-s-recipe-homemade-strawberry-ice-cream/BO4uQUGrVh-252.avif 252w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://freezethepint.com/blog/a-latte-food-s-recipe-homemade-strawberry-ice-cream/BO4uQUGrVh-252.webp 252w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://freezethepint.com/blog/a-latte-food-s-recipe-homemade-strawberry-ice-cream/BO4uQUGrVh-252.png&quot; alt=&quot;ai-generated-achenes.jpg&quot; width=&quot;252&quot; height=&quot;252&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;h3 id=&quot;appearance-20&quot;&gt;&lt;strong&gt;Appearance: 20&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;Compared to the artificial coloring of commercial strawberry ice cream, pureeing fresh strawberries creates a more subdued appearance. While small gritty particles are visible in the base, making it somewhat plain, the natural strawberry color is authentic. Adding strawberry chunks would have made for a more visually appealing dessert.&lt;/p&gt;
-&lt;h3 id=&quot;aftertaste-17&quot;&gt;&lt;strong&gt;Aftertaste: 17&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;After one scoop, the aftertaste was hardly noticeable. After two scoops, a coating developed on the tongue—not the most unpleasant, but definitely present.&lt;/p&gt;
-&lt;h3 id=&quot;final-score-75&quot;&gt;Final Score: 75&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.alattefood.com/homemade-strawberry-ice-cream/&quot;&gt;alattefood.com’s Homemade Strawberry Ice Cream recipe&lt;/a&gt; was a solid choice! I’d definitely make it again, but next time, I’ll include strawberry chunks to enhance both the flavor and texture while reducing the grittiness. This might also improve the aftertaste and mouthfeel.&lt;/p&gt;
-&lt;iframe src=&quot;https://app.freezethepint.com/ice-cream/homemade-strawberry-ice-cream&quot; title=&quot;Gallery of frozen dessert recipes.&quot;&gt;&lt;/iframe&gt;
 </content>
   </entry>
 </feed>
