@@ -2,32 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 	
 	<url>
-		<loc>https://freezethepint.com/about/</loc>
-		<lastmod>2025-04-05</lastmod>
+		<loc>https://yourblogurl.com/blog/first-post/</loc>
+		<lastmod>2025-01-01</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://freezethepint.com/blog/</loc>
-		<lastmod>2025-04-05</lastmod>
+		<loc>https://yourblogurl.com/about/</loc>
+		<lastmod>2025-07-20</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://freezethepint.com/blog/first-post/</loc>
-		<lastmod>2025-04-05</lastmod>
+		<loc>https://yourblogurl.com/blog/</loc>
+		<lastmod>2025-07-20</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://freezethepint.com/</loc>
-		<lastmod>2025-04-05</lastmod>
+		<loc>https://yourblogurl.com/</loc>
+		<lastmod>2025-07-20</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://freezethepint.com/tags/</loc>
-		<lastmod>2025-04-05</lastmod>
+		<loc>https://yourblogurl.com/tags/</loc>
+		<lastmod>2025-07-20</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://freezethepint.com/feed/feed.xml</loc>
-		<lastmod>2025-04-05</lastmod>
+		<loc>https://yourblogurl.com/feed/feed.xml</loc>
+		<lastmod>2025-07-20</lastmod>
 	</url>
 </urlset>

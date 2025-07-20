@@ -1,0 +1,34 @@
+.theme-toggle {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+	position: relative;
+	display: inline-flex;
+	width: 2.5rem;
+	height: 2.5rem;
+	align-items: center;
+	justify-content: center;
+}
+
+.theme-toggle .sun,
+.theme-toggle .moon {
+	position: absolute;
+	transition: transform 0.3s ease;
+}
+
+.theme-toggle .sun {
+	transform: scale(1);
+}
+
+.theme-toggle .moon {
+	transform: scale(0);
+}
+
+[data-theme="dark"] .theme-toggle .sun {
+	transform: scale(0);
+}
+
+[data-theme="dark"] .theme-toggle .moon {
+	transform: scale(1);
+}
