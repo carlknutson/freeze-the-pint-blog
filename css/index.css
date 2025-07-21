@@ -86,6 +86,7 @@ h6 {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .logo {
@@ -135,15 +136,15 @@ h6 {
     bottom: -8px;
 }
 
-.nav.active + .nav-toggle .hamburger {
+.nav-toggle.active .hamburger {
     background-color: transparent;
 }
 
-.nav.active + .nav-toggle .hamburger::before {
+.nav-toggle.active .hamburger::before {
     transform: rotate(45deg) translate(5px, 5px);
 }
 
-.nav.active + .nav-toggle .hamburger::after {
+.nav-toggle.active .hamburger::after {
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
@@ -300,6 +301,7 @@ h6 {
 	.header-container {
 		max-width: 40rem;
 		margin: 0 auto;
+		flex-wrap: nowrap;
 	}
 
 	.logo {
