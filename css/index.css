@@ -290,16 +290,27 @@ h6 {
 		flex-wrap: nowrap;
 	}
 
+	.logo {
+        order: 1;
+    }
+
 	.logo a {
 		font-size: 1.5rem;
 	}
 
 	.nav {
+        order: 2;
 		display: flex;
 		gap: 2rem;
 		margin-top: 0;
 		width: auto;
+        margin-left: 2rem;
 	}
+
+    .theme-toggle {
+        order: 3;
+        margin-left: auto;
+    }
 
 	.postlist {
 		margin: 2rem 0;

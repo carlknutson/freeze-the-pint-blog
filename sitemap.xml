@@ -2,17 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 	
 	<url>
+		<loc>https://yourblogurl.com/blog/example-post/</loc>
+		<lastmod>2025-01-01</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://yourblogurl.com/about/</loc>
 		<lastmod>2025-07-21</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://yourblogurl.com/blog/</loc>
-		<lastmod>2025-07-21</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://yourblogurl.com/blog/first-post/</loc>
 		<lastmod>2025-07-21</lastmod>
 	</url>
 	
