@@ -64,7 +64,7 @@ This blog template is pre-configured to pull content directly from a Notion data
 1.  Go to [Notion Developers](https://www.notion.so/my-integrations) and create a new integration.
 2.  Give your integration a name (e.g., "My Blog Integration").
 3.  Copy the "Internal Integration Token" (this is your API key).
-4.  Set this token as an environment variable named `NOTION_KEY` in your deployment environment (e.g., Netlify, Vercel) or in a `.env` file for local development. For local development, create a file named `.env` in the root of your project and add `NOTION_KEY=your_notion_api_key_here` to it.
+4.  Set this token as an environment variable named `NOTION_KEY` in your deployment environment or in a `.env` file for local development.
 
 ### Creating Your Notion Database
 
@@ -104,10 +104,6 @@ node .github/scripts/notion-to-md.js
 ```
 
 This will create Markdown files in the `content/blog/` directory.
-
-## Deployment
-
-This template is configured for deployment on platforms like Netlify or Vercel. For GitHub Pages deployment, the `.github/workflows/gh-pages.yml` workflow is responsible for building and publishing the site. Ensure you set the `NOTION_API_KEY` and `NOTION_DATABASE_ID` environment variables in your deployment settings.
 
 ## Customization
 
