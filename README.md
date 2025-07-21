@@ -1,117 +1,138 @@
-# eleventy-base-blog v9
+# Eleventy Notion Starter Blog
 
-A starter repository showing how to build a blog with the [Eleventy](https://www.11ty.dev/) site generator (using the [v3.0 release](https://github.com/11ty/eleventy/releases/tag/v3.0.0)).
+This is a blog template built with [Eleventy](https://www.11ty.dev/), designed to be easily integrated with Notion for content management.
+
+## Table of Contents
+
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Running Locally](#running-locally)
+- [Notion Integration](#notion-integration)
+  - [Setting up Notion API Key](#setting-up-notion-api-key)
+  - [Creating Your Notion Database](#creating-your-notion-database)
+  - [Generating Content from Notion](#generating-content-from-notion)
+- [Deployment](#deployment)
+- [Customization](#customization)
+- [GitHub Pages Setup](#github-pages-setup)
+- [Original Template](#original-template)
+- [Eleventy Resources](#eleventy-resources)
 
 ## Getting Started
 
-* [Want a more generic/detailed getting started guide?](https://www.11ty.dev/docs/getting-started/)
+### Prerequisites
 
-1. Make a directory and navigate to it:
+Make sure you have [Node.js](https://nodejs.org/en/) (version 18 or higher) installed. You can check your version with:
 
-```
-mkdir my-blog-name
-cd my-blog-name
-```
-
-2. Clone this Repository
-
-```
-git clone https://github.com/11ty/eleventy-base-blog.git .
+```bash
+node --version
 ```
 
-_Optional:_ Review `eleventy.config.js` and `_data/metadata.js` to configure the site’s options and data.
+### Installation
 
-3. Install dependencies
+1.  **Create a new repository from this template:**
 
+    On GitHub, click the "Use this template" button to create a new repository based on this one. Then, clone your newly created repository:
+
+    ```bash
+    git clone https://github.com/your-username/your-new-repo.git
+    cd your-new-repo
+    ```
+
+2.  Install the dependencies:
+
+    ```bash
+    npm install
+    ```
+
+### Running Locally
+
+To start a local development server with hot-reloading:
+
+```bash
+npm start
 ```
-npm install
+
+This will typically run the site at `http://localhost:8080/`.
+
+## Notion Integration
+
+This blog template is pre-configured to pull content directly from a Notion database. This allows you to manage your blog posts in Notion and generate static Markdown files for your Eleventy site.
+
+### Setting up Notion API Key
+
+1.  Go to [Notion Developers](https://www.notion.so/my-integrations) and create a new integration.
+2.  Give your integration a name (e.g., "My Blog Integration").
+3.  Copy the "Internal Integration Token" (this is your API key).
+4.  Set this token as an environment variable named `NOTION_KEY` in your deployment environment (e.g., Netlify, Vercel) or in a `.env` file for local development. For local development, create a file named `.env` in the root of your project and add `NOTION_KEY=your_notion_api_key_here` to it.
+
+### Creating Your Notion Database
+
+1.  Create a new database in Notion.
+2.  Share your database with the integration you created in the previous step. Click the "Share" button in the top right corner of your Notion database, then invite your integration.
+3.  Copy your database ID. You can find this in the URL of your Notion database. It's the string of characters between `notion.so/` and `?v=`.
+4.  Set this database ID as an environment variable named `NOTION_BLOG_ID` in your deployment environment or in a `.env` file for local development. For local development, add `NOTION_BLOG_ID=your_notion_database_id_here` to your `.env` file.
+
+Your Notion database should have the following properties (case-sensitive):
+
+- `Title` (Type:Title)
+- `Description` (Type: Text)
+- `Tags` (Type: Multi-select)
+- `Publish` (Type: Checkbox) - If checked, the corresponding Markdown file will be created or updated. Unchecking this property will prevent further updates to the Markdown file, but will not delete existing content.
+- `Published` (Type: Date)
+
+### Generating Content from Notion
+
+The `notion-to-md.js` script (located in `.github/scripts/`) is responsible for fetching content from your Notion database and converting it into Markdown files. This script is designed to be run manually via a GitHub Actions workflow (`.github/workflows/generate-md.yml`) using `workflow_dispatch`. When triggered, it generates the Markdown files and commits them to your repository. **For this GitHub Action to function correctly, ensure you have set `NOTION_KEY` and `NOTION_BLOG_ID` as repository secrets in your GitHub repository settings.**
+
+### Handling Images in Notion
+
+Images embedded directly within your Notion pages will be automatically downloaded and saved locally when the `generate-md.yml` workflow runs. The `save-images.cjs` script (also in `.github/scripts/`) handles this process by replacing the Notion image URLs in the generated Markdown with local file paths.
+
+To include images:
+
+1.  **Embed images directly in your Notion page content.** You can drag and drop images, paste them, or use Notion's image block.
+2.  **Add alt text to your images in Notion.** The alt text you provide for an image in Notion will be used as the filename when the image is downloaded and saved locally by the `save-images.cjs` script. This is crucial for proper image mapping and organization.
+3.  When the `generate-md.yml` workflow is triggered, the images will be downloaded to a directory alongside your Markdown file, and the Markdown will be updated to reference these local images.
+
+**Note on Image Metadata:** Before uploading images to Notion, you might want to remove any sensitive metadata (like location data) from them. You can use online tools like [verexif.com](https://www.verexif.com/en/index.php) for this purpose.
+
+You can also run the script locally to generate content:
+
+```bash
+node .github/scripts/notion-to-md.js
 ```
 
-4. Run Eleventy
+This will create Markdown files in the `content/blog/` directory.
 
-Generate a production-ready build to the `_site` folder:
+## Deployment
 
-```
-npx @11ty/eleventy
-```
+This template is configured for deployment on platforms like Netlify or Vercel. For GitHub Pages deployment, the `.github/workflows/gh-pages.yml` workflow is responsible for building and publishing the site. Ensure you set the `NOTION_API_KEY` and `NOTION_DATABASE_ID` environment variables in your deployment settings.
 
-Or build and host on a local development server:
+## Customization
 
-```
-npx @11ty/eleventy --serve
-```
+This template is designed to be easily customizable. Here are some key areas you might want to explore:
 
-Or you can run [debug mode](https://www.11ty.dev/docs/debugging/) to see all the internals.
+-   **Eleventy Configuration:** The main Eleventy configuration is in `eleventy.config.js`. Here you can adjust collections, add plugins, and define global data.
+-   **Layouts and Includes:** The `_includes/` directory contains Nunjucks templates for your site's layout (`_includes/layouts/`) and reusable components (`_includes/`).
+-   **CSS Styling:** All the main CSS is located in the `public/css/` directory. You can modify `index.css` or create new CSS files to change the look and feel of your blog.
+-   **Data Files:** The `_data/` directory holds global data that can be accessed throughout your templates, such as `metadata.js`.
 
-## Features
+## GitHub Pages Setup
 
-- Using [Eleventy v3](https://github.com/11ty/eleventy/releases/tag/v3.0.0) with zero-JavaScript output.
-	- Content is exclusively pre-rendered (this is a static site).
-	- Can easily [deploy to a subfolder without changing any content](https://www.11ty.dev/docs/plugins/html-base/)
-	- All URLs are decoupled from the content’s location on the file system.
-	- Configure templates via the [Eleventy Data Cascade](https://www.11ty.dev/docs/data-cascade/)
-- **Performance focused**: four-hundos Lighthouse score out of the box!
-	- _0 Cumulative Layout Shift_
-	- _0ms Total Blocking Time_
-- Local development live reload provided by [Eleventy Dev Server](https://www.11ty.dev/docs/dev-server/).
-- Content-driven [navigation menu](https://www.11ty.dev/docs/plugins/navigation/)
-- Fully automated [Image optimization](https://www.11ty.dev/docs/plugins/image/)
-	- Zero-JavaScript output.
-	- Support for modern image formats automatically (e.g. AVIF and WebP)
-	- Processes images on-request during `--serve` for speedy local builds.
-	- Prefers `<img>` markup if possible (single image format) but switches automatically to `<picture>` for multiple image formats.
-	- Automated `<picture>` syntax markup with `srcset` and optional `sizes`
-	- Includes `width`/`height` attributes to avoid [content layout shift](https://web.dev/cls/).
-	- Includes `loading="lazy"` for native lazy loading without JavaScript.
-	- Includes [`decoding="async"`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/decoding)
-	- Images can be co-located with blog post files.
-- Per page CSS bundles [via `eleventy-plugin-bundle`](https://github.com/11ty/eleventy-plugin-bundle).
-- Built-in [syntax highlighter](https://www.11ty.dev/docs/plugins/syntaxhighlight/) (zero-JavaScript output).
-- Draft content: use `draft: true` to mark any template as a draft. Drafts are **only** included during `--serve`/`--watch` and are excluded from full builds. This is driven by the `addPreprocessor` configuration API in `eleventy.config.js`. Schema validator will show an error if non-boolean value is set in data cascade.
-- Blog Posts
-	- Automated next/previous links
-	- Accessible deep links to headings
-- Generated Pages
-	- Home, Archive, and About pages.
-	- [Atom feed included (with easy one-line swap to use RSS or JSON](https://www.11ty.dev/docs/plugins/rss/)
-	- `sitemap.xml`
-	- Zero-maintenance tag pages ([View on the Demo](https://eleventy-base-blog.netlify.app/tags/))
-	- Content not found (404) page
+To publish your blog to GitHub Pages:
 
-## Demos
+1.  Go to your repository on GitHub.
+2.  Navigate to **Settings** > **Pages**.
+3.  Under "Build and deployment", select **GitHub Actions** as the source.
+4.  The `gh-pages.yml` workflow will automatically build and deploy your site whenever changes are pushed to the `main` branch.
 
-- [Netlify](https://eleventy-base-blog.netlify.app/)
-- [Vercel](https://demo-base-blog.11ty.dev/)
-- [Cloudflare Pages](https://eleventy-base-blog-d2a.pages.dev/)
-- [Remix on Glitch](https://glitch.com/~11ty-eleventy-base-blog)
-- [GitHub Pages](https://11ty.github.io/eleventy-base-blog/)
+## Original Template
 
-## Deploy this to your own site
+This template was originally based on the [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog) by the Eleventy team.
 
-Deploy this Eleventy site in just a few clicks on these services:
+## Eleventy Resources
 
-- Read more about [Deploying an Eleventy project](https://www.11ty.dev/docs/deployment/) to the web.
-- [Deploy this to **Netlify**](https://app.netlify.com/start/deploy?repository=https://github.com/11ty/eleventy-base-blog)
-- [Deploy this to **Vercel**](https://vercel.com/import/project?template=11ty%2Feleventy-base-blog)
-- Look in `.github/workflows/gh-pages.yml.sample` for information on [Deploying to **GitHub Pages**](https://www.11ty.dev/docs/deployment/#deploy-an-eleventy-project-to-git-hub-pages).
-- [Try it out on **Stackblitz**](https://stackblitz.com/github/11ty/eleventy-base-blog)
-
-### Implementation Notes
-
-- `content/about/index.md` is an example of a content page.
-- `content/blog/` has the blog posts but really they can live in any directory. They need only the `posts` tag to be included in the blog posts [collection](https://www.11ty.dev/docs/collections/).
-- Use the `eleventyNavigation` key (via the [Eleventy Navigation plugin](https://www.11ty.dev/docs/plugins/navigation/)) in your front matter to add a template to the top level site navigation. This is in use on `content/index.njk` and `content/about/index.md`.
-- Content can be in _any template format_ (blog posts needn’t exclusively be markdown, for example). Configure your project’s supported templates in `eleventy.config.js` -> `templateFormats`.
-- The `public` folder in your input directory will be copied to the output folder (via `addPassthroughCopy` in the `eleventy.config.js` file). This means `./public/css/*` will live at `./_site/css/*` after your build completes.
-- This project uses three [Eleventy Layouts](https://www.11ty.dev/docs/layouts/):
-	- `_includes/layouts/base.njk`: the top level HTML structure
-	- `_includes/layouts/home.njk`: the home page template (wrapped into `base.njk`)
-	- `_includes/layouts/post.njk`: the blog post template (wrapped into `base.njk`)
-- `_includes/postslist.njk` is a Nunjucks include and is a reusable component used to display a list of all the posts. `content/index.njk` has an example of how to use it.
-
-#### Content Security Policy
-
-If your site enforces a [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) (as public-facing sites should), you have a few choices (pick one):
-
-1. In `base.njk`, remove `<style>{% getBundle "css" %}</style>` and uncomment `<link rel="stylesheet" href="{% getBundleFileUrl "css" %}">`
-2. Configure the server with the CSP directive `style-src: 'unsafe-inline'` (less secure).
+-   [Eleventy Documentation](https://www.11ty.dev/docs/)
+-   [Eleventy Getting Started Guide](https://www.11ty.dev/docs/getting-started/)
+-   [Eleventy on GitHub](https://github.com/11ty/eleventy)
