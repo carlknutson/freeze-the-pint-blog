@@ -81,6 +81,13 @@ h6 {
     flex-wrap: wrap;
 }
 
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
 .logo {
     order: 2;
 }
@@ -290,6 +297,11 @@ h6 {
 		flex-wrap: nowrap;
 	}
 
+	.header-container {
+		max-width: 40rem;
+		margin: 0 auto;
+	}
+
 	.logo {
         order: 1;
     }
@@ -304,12 +316,10 @@ h6 {
 		gap: 2rem;
 		margin-top: 0;
 		width: auto;
-        margin-left: 2rem;
 	}
 
     .theme-toggle {
         order: 3;
-        margin-left: auto;
     }
 
 	.postlist {
