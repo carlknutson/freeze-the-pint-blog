@@ -5,29 +5,28 @@
   <subtitle>A starter template for a personal blog powered by Notion as a CMS. Easily customize and publish your own content.</subtitle>
   <link href="https://yourblogurl.com/feed/feed.xml" rel="self" />
   <link href="https://yourblogurl.com/" />
-  <updated>2025-01-01T00:00:00Z</updated>
+  <updated>2025-07-21T04:12:11Z</updated>
   <id>https://yourblogurl.com/</id>
   <author>
     <name>Your Name</name>
     <email>your@email.com</email>
   </author>
   <entry>
-    <title>Example Post</title>
+    <title>First post!</title>
     <link href="https://yourblogurl.com/blog/first-post/" />
-    <updated>2025-01-01T00:00:00Z</updated>
+    <updated>2025-07-21T04:12:11Z</updated>
     <id>https://yourblogurl.com/blog/first-post/</id>
-    <content type="html">&lt;p&gt;Welcome to your new blog! This is an example post to help you get started.&lt;/p&gt;
-&lt;p&gt;You can edit or delete this post, or use it as a template for your own writing.&lt;/p&gt;
-&lt;h2 id=&quot;how-to-use-this-template&quot;&gt;How to use this template&lt;/h2&gt;
+    <content type="html">&lt;p&gt;Over the past year, I got caught up in the hype surrounding the Ninja Creami Deluxe. It was a fantastic machine that worked wonders—until it started malfunctioning after ~75 spins. I’ll likely dive into that experience in a future post. But despite the setback, it got me hooked on making ice cream. My first creation was a simple strawberry banana ice cream, made with just strawberries and bananas 🤯&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://yourblogurl.com/blog/first-post/UtRTOdD8rL-252.avif 252w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://yourblogurl.com/blog/first-post/UtRTOdD8rL-252.webp 252w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://yourblogurl.com/blog/first-post/UtRTOdD8rL-252.png&quot; alt=&quot;strawberry-banana.jpg&quot; width=&quot;252&quot; height=&quot;189&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;During my time with the Ninja Creami, I wanted a way to keep track of the recipes I was making and the changes I’d experiment with. That’s when I created &lt;a href=&quot;http://freezethepint.com/&quot;&gt;freezethepint.com&lt;/a&gt;. The site was initially just a place to host the recipes I tried and track modifications made along the way. But if anyone is reading this, you know it has become much more… a blog.&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;Future posts will consists of:&lt;/u&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Write your posts in Markdown&lt;/li&gt;
-&lt;li&gt;Add tags to organize your content&lt;/li&gt;
-&lt;li&gt;Update the frontmatter at the top of each post&lt;/li&gt;
+&lt;li&gt;reviews of other’s ice cream recipes&lt;/li&gt;
+&lt;li&gt;random rants related to ice cream&lt;/li&gt;
+&lt;li&gt;random (probably impressive) experiments related to ice cream&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;example-content&quot;&gt;Example content&lt;/h2&gt;
-&lt;p&gt;This is a paragraph. You can add images, links, lists, and more.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;Happy blogging!&lt;/p&gt;
+&lt;p&gt;Honestly, this whole blog adventure is a way for me to build a blogging platform from the ground up. This post is written within a Notion database entry. It will eventually be pulled through the Node Notion SDK, converted into markdown via a GitHub Action, committed to my &lt;a href=&quot;https://github.com/carlknutson/freeze-the-pint-blog&quot;&gt;freeze-the-pint-blog&lt;/a&gt; repository, processed by the Eleventy framework, and, finally, published to &lt;code&gt;freezethepint.com&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Thanks for joining me on this sweet journey.&lt;/p&gt;
 </content>
   </entry>
 </feed>
